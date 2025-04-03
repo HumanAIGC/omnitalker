@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+    <!-- Replace the content tag with appropriate information -->
+    <meta name="description" content="OmniTalker">
+    <meta property="og:title" content="OmniTalker"/>
+    <meta property="og:description"
+          content="OmniTalker: Real-Time Text-Driven Talking Head Generation with In-Context Audio-Visual Style Replication"/>
+    <meta property="og:url" content="URL OF THE WEBSITE"/>
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+    <meta property="og:image" content="content/images/motivation-two-columns-V4.png"/>
+    <meta property="og:image:width" content="1927"/>
+    <meta property="og:image:height" content="623"/>
+
+
+    <meta name="twitter:title" content="OmniTalker"> 
+    <meta name="twitter:description"
+          content="OmniTalker: Real-Time Text-Driven Talking Head Generation with In-Context Audio-Visual Style Replication">
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+    <meta name="twitter:image" content="content/images/motivation-two-columns-V4.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Keywords for your paper to be indexed by-->
+    <meta name="keywords" content="Image-to-Video">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>OmniTalker: Real-Time Text-Driven Talking Head Generation with In-Context Audio-Visual Style Replication</title>
+    <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+    <link rel="stylesheet" href="static/css/bulma.min.css">
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="static/css/index.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+    <script defer src="static/js/fontawesome.all.min.js"></script>
+    <script src="static/js/bulma-carousel.min.js"></script>
+    <script src="static/js/bulma-slider.min.js"></script>
+    <script src="static/js/index.js"></script>
+</head>
+
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+    <div class="navbar-menu">
+        <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+            <a class="navbar-item" href=https://github.com/HumanAIGC>
+          <span class="icon">
+            <i class="fas fa-home"></i>
+          </span>
+            </a>
+        </div>
+
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column has-text-centered">
+                    <h1 class="title is-1 publication-title">OmniTalker: Real-Time Text-Driven Talking Head Generation with In-Context Audio-Visual Style Replication</h1>
+                    <div class="is-size-5 publication-authors">
+                        <!-- Paper authors -->
+                        <!-- <span class="author-block">
+                            <a href="https://dblp.org/pid/183/0937.html" target="_blank">Zhongjian Wang</a><sup>*</sup>,</span> -->
+                        <span class="author-block">
+                            <a href="" target="_blank">Zhongjian Wang</a>,</span>
+                        <span class="author-block">
+                            <a href="https://scholar.google.com/citations?user=QTgxKmkAAAAJ" target="_blank">Peng Zhang</a>,</span>
+                        <span class="author-block">
+                            <a href="https://dblp.org/pid/183/0937.html" target="_blank">Jinwei Qi</a>,</span>
+                        <span class="author-block">
+                            <a href="https://github.com/alibaba/cluster-contrast-reid" target="_blank">Guangyuan Wang</a>,</span>
+                        <span class="author-block">
+                            <a href="https://dblp.org/pid/10/1887-7.html" target="_blank">Sheng Xu</a>,</span>
+                        <span class="author-block">
+                            <a href="https://dblp.org/pid/11/4046.html" target="_blank">Bang Zhang</a>,</span>
+                        <span class="author-block">
+                            <a href="https://scholar.google.com/citations?user=FJwtMf0AAAAJ&hl=zh-CN" target="_blank">Liefeng Bo</a>
+                        </span>
+                    </div>
+                    <div class="is-size-5 publication-authors">
+                        <span class="author-block">Tongyi Lab, Alibaba Group</span>
+                        <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
+                    </div>
+
+                    <div class="column has-text-centered">
+                        <div class="publication-links">
+                            
+                            <!-- ArXiv abstract Link -->
+                            <span class="link-block">
+                                <a href="" target="_blank"
+                                    class="external-link button is-normal is-rounded is-dark">
+                                    <span class="icon">
+                                    <i class="ai ai-arxiv"></i>
+                                    </span>
+                                    <span>arXiv</span>
+                                </a>
+                            </span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="hero is-small">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <!-- <h2 class="title is-3">Facial Motion Generation</h2> -->
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <img src="content/images/motivation-two-columns-V4.png" alt="MY ALT TEXT" style="width: 95%; height: 95%;"/>
+            </div>
+            <div class="item">
+                <!-- <h2 class="content has-text-justified"> -->
+                <h2 class="subtitle has-text-centered">
+                    <p style="font-size: 1.2em;">
+                        <ul>
+                            We propose OmniTalker, a unified framework to jointly generate speech and talking video from text, 
+                            which alleviates the pain of redundant computation, error accumulation and audio-visual style mismatch in existing methods.
+                        </ul>
+                    </p>
+                </h2>
+                <div class="item">
+                </div>
+            </div>
+</section>
+
+
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+    <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <h2 class="title is-3">Abstract</h2>
+                <!--                <div style="display: flex; justify-content: center; align-items: center;">-->
+                <!--                    <img src="content/images/framework/intro.png" alt="MY ALT TEXT" style="width: 80%; height: 80%;"/>-->
+                <!--                </div>-->
+                <div class="content has-text-justified">
+                    <p style="font-size: 1.2em;">
+                        Recent years have witnessed remarkable advances in talking head generation(THG), owing to its potential to revolutionize the human-AI interaction from text interfaces into realistic video chats.
+                        However, research on text-driven talking heads remains underexplored, with existing methods predominantly adopting a cascaded pipeline that combines text-to-speech (TTS) systems with audio-driven talking head models. 
+                        This conventional pipeline not only introduces system complexity and latency overhead but also fundamentally suffers from asynchronous audiovisual output and stylistic discrepancies between generated speech and visual expressions.
+                        To address these limitations, we introduce OmniTalker, an end-to-end unified framework that simultaneously generates synchronized speech and talking head videos from text and reference video in real-time zero-shot scenarios, while preserving both speech style and facial styles. 
+                        The framework employs a dual-branch diffusion transformer architecture: the audio branch synthesizes mel-spectrograms from text, while the visual branch predicts fine-grained head poses and facial dynamics.
+                        To bridge modalities, we introduce a novel audio-visual fusion module that integrates cross-modal information to ensure temporal synchronization and stylistic coherence between audio and visual outputs.
+                        Furthermore, our in-context reference learning module effectively captures both speech and facial style characteristics from a single reference video without introducing an extra style extracting module.
+                        To the best of our knowledge, OmniTalker represents the first unified framework that jointly models speech style and facial style in a zero-shot setting, achieving real-time inference speed of 25 FPS.
+                        Extensive experiments demonstrate that our method surpasses existing approaches in generation quality, particularly excelling in style preservation and audio-video synchronization, while maintaining real-time prediction efficiency. 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--                                            <video class="video-player" poster="" id="tree1" controls>-->
+        <!--                    <source src="content/video/main_page.mp4" type="video/mp4">-->
+        <!--                </video>-->
+    </div>
+</section>
+
+<!-- Method -->
+<section class="hero is-small">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <h2 class="title is-2">Method</h2>
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <img src="content/images/framework-V7.png" alt="MY ALT TEXT" style="width: 95%; height: 95%;"/>
+            </div>
+            <div class="item">
+                <h2 class="content has-text-justified">
+                    <p style="font-size: 1.2em;">
+                        <ul>
+                            Framework of OmniTalker model. (a) In-Context Embed module adopts modal-specific encoders to extract text, audio and motion embeddings. The audio and motion embedding are then padded according to the target sequence length, which estimated by an extra duration prediction module. (b) The audio and visual features jointly interact in the audio-visual fusion module. Then the audio and visual features are feed in to several DiT blocks separately.
+                        </ul>
+                        <ul>
+                            <li><strong>Unified Multimodal Framework</strong>: OmniTalker integrates text-to-audio and text-to-video generation in a single model, enabling synchronized output through cross-modal fusion.</li>
+                            <li><strong>In-Context Multimodal Style Replication</strong>: A reference-guided mechanism captures speech and facial styles for zero-shot replication.</li>
+                            <li><strong>Real-Time Efficiency</strong>: By integrating flow matching and maintaining a small model size (0.6B), OmniTalker achieves real-time inference while preserving high-fidelity outputs.</li>
+                        </ul>
+                    </p>
+                </h2>
+                <div class="item">
+                </div>
+            </div>
+</section>
+
+<!-- End Method -->
+
+<style>
+    .gifImage:hover {
+        opacity: 0.8;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        transform: scale(1.1);
+    }
+
+    .paused {
+        animation-play-state: paused;
+    }
+
+</style>
+
+
+<head>
+    <title>place gif</title>
+    <style>
+        .gif-container {
+            display: flex;
+        }
+
+        .gif {
+            width: 660px; /* 设置 GIF 的宽度 */
+            height: 400px; /* 设置 GIF 的高度 */
+        }
+    </style>
+</head>
+
+<section class="hero is-small is-light">
+    <div class="hero-body">
+        <div class="container">
+            <h2 class="title is-2">Results</h2>
+            <br></br>
+            <h2 class="content has-text-justified">
+                <p style="font-size: 1.4em;"></p>
+            </h2>
+
+            <div style="display: flex; justify-content: center;align-items: center; height: 80px;">
+                <h3 class="title is-4"> Zero-shot In-context Multimodal Generation </h3>
+            </div>
+            <!-- <div class="content has-text-justified" style="display: flex; justify-content: center;align-items: center;">
+                <p style="font-size: 1.2em;">
+                    We can generate highly expressive audio-driven upper-body digital human videos, supporting different scenarios with or without hands.
+                </p>
+            </div> -->
+
+            <style>
+                .video-container {
+                    display: flex;
+                    justify-content: space-between; /* 使视频之间有间距 */
+                    align-items: center;
+                    margin-bottom: 20px; /* 视频下方的间距 */
+                }
+            
+                .video-item {
+                    flex: 1; /* 使每个视频项占据相等的空间 */
+                    margin: 0 10px; /* 视频之间的间距 */
+                }
+            
+                .video-player {
+                    width: 100%; /* 确保视频宽度适应容器 */
+                    max-width: 500px; /* 设置最大宽度以避免过大 */
+                }
+            </style>
+
+            <!-- <div id="results-carousel" class="carousel results-carousel"> -->
+            <div class="table-responsive pt-3"> 
+                <table class="table table-hover pt-2">
+                    <colgroup>
+                        <col style="width: 10%;" />
+                        <col style="width: 30%;" />
+                        <col style="width: 30%;" />
+                        <col style="width: 30%;" />
+                    </colgroup>
+
+                    <thead>
+                    <tr>
+                        <th style="vertical-align : middle;text-align: center">Language </th>
+                        <th style="vertical-align : middle;text-align: center">Prompt </th>
+                        <th style="vertical-align : middle;text-align: center">Same Language Generation</th>
+                        <th style="vertical-align : middle;text-align: center">Cross-linugal Generation</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="vertical-align : middle;text-align:center;" rowspan="3">ZH</td>
+                            <td style="vertical-align : top;text-align:center;"><video class="video-player" poster="" controls><source src="content/videos/LeiJun_ref.mp4" type="video/mp4"></video><br>同学们好。我是小米公司的雷军。今天我正式加入了B站大家庭,成为了一名B站的萌新。</td>
+                            <td style="vertical-align : top;text-align:center;"><video class="video-player" poster="" controls><source src="content/videos/LeiJun_gen_zh.mp4" type="video/mp4"></video><br>喜欢小米的小朋友们你们好，我是雷军，今天我当了一个小时的中国首富，感谢大家捧场。</td>
+                            <td style="vertical-align : top;text-align:center;"><video class="video-player" poster="" controls><source src="content/videos/LeiJun_gen_en.mp4" type="video/mp4"></video><br>How are you? Mi fans. I'm Lei Jun, I'm very happy to be China's richest man in one hour today, thank you ry much. Are you OK?</td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align : top;text-align:center;"><video class="video-player" poster="" controls><source src="content/videos/DengLijun_ref.mp4" type="video/mp4"></video><br>你生活的那么忙,每天东跑西跑的,会不会想家呢?当然会了,尤其是离开家乡很久的时候,更会有思乡的感觉。</td>
+                            <td style="vertical-align : top;text-align:center;"><video class="video-player" poster="" controls><source src="content/videos/DengLijun_gen_zh.mp4" type="video/mp4"></video><br>亲爱的观众朋友们，大家好。在这个美好的夜晚，非常荣幸能够以AI的形式再次与你们相遇。每当站在这个舞台上，我都感到无比的幸福和激动，因为能用歌声传达心中的情感，与每一位在场的朋友分享这份真挚的心意，是我最大的愿望。</td>
+                            <td style="vertical-align : top;text-align:center;"><video class="video-player" poster="" controls><source src="content/videos/DengLijun_gen_en.mp4" type="video/mp4"></video><br>My dear audience friends, good evening. On this beautiful night, it is such an honor to meet you all again in the form of AI. Every time standing on this stage, I feel incredibly happy and excited, because being able to convey my inner feelings through songs and share this sincere heart with every friend present is my greatest wish.</td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align : top;text-align:center;"><video class="video-player" poster="" controls><source src="content/videos/LuoXiang_ref.mp4" type="video/mp4"></video><br>那我想讲一讲跟虚假信息有关的问题。什么叫虚假信息呢?顾名思义,就是假消息,就是谣言。</td>
+                            <td style="vertical-align : top;text-align:center;"><video class="video-player" poster="" controls><source src="content/videos/LuoXiang_gen_zh.mp4" type="video/mp4"></video><br>听说现在有人拿AI复刻我的声音和形象，搞的大家分不出来真假，啊，你们这个被抓起来，是要判三年的。</td>
+                            <td style="vertical-align : top;text-align:center;"><video class="video-player" poster="" controls><source src="content/videos/LuoXiang_gen_en.mp4" type="video/mp4"></video><br>我试试说几句英文，啊，I've heard that nowadays, some people are using AI to replicate my voice and appearance, making it hard for everyone to tell the difference between real and fake. Yet, if they get caught, they could be sentenced to three years in prison.</td>
+                        </tr>
+                        
+                        <tr>
+                            <td style="vertical-align : middle;text-align:center;" rowspan="5">EN</td>
+                            <td style="vertical-align : top;text-align:center;"><video class="video-player" poster="" controls><source src="content/videos/Trump_ref.mp4" type="video/mp4"></video><br>Unify. I bring people together. I get along with people. I've always gotten along with people. I'll get along with Democrats, with Republicans, with liberals, with conservatives.</td>
+                            <td style="vertical-align : top;text-align:center;"><video class="video-player" poster="" controls><source src="content/videos/Trump_gen_en.mp4" type="video/mp4"></video><br>We shall not be swayed easily, no matter how rocky the road ahead may be. We must trust that amidst the difficulties, solutions can be found; amidst disagreements, consensus can be reached. This is not just a choice about policies or politics, it concerns our shared future and the world we wish to leave for the next generation.</td>
+                            <td style="vertical-align : top;text-align:center;"><video class="video-player" poster="" controls><source src="content/videos/Trump_gen_zh.mp4" type="video/mp4"></video><br>让我告诉你，没有人比我更爱中国了。我多次说过，这是真的。中国人民、中国文化、以及那令人惊叹的历史——这一切都太棒了！他们制造的东西，说真的，世界上没有哪个国家能比得上中国的制造能力。</td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align : top;text-align:center;"><video class="video-player" poster="" controls><source src="content/videos/Leonardo_ref.mp4" type="video/mp4"></video><br>For our children's children, and for those people out there whose voices have been drowned out by the politics of greed, I thank you all for this amazing award tonight. Let us not take this planet for granted.</td>
+                            <td style="vertical-align : top;text-align:center;"><video class="video-player" poster="" controls><source src="content/videos/Leonardo_gen_en.mp4" type="video/mp4"></video><br>We shall not be swayed easily, no matter how rocky the road ahead may be. We must trust that amidst the difficulties, solutions can be found; amidst disagreements, consensus can be reached. This is not just a choice about policies or politics, it concerns our shared future and the world we wish to leave for the next generation.</td>
+                            <td style="vertical-align : top;text-align:center;"><video class="video-player" poster="" controls><source src="content/videos/Leonardo_gen_zh.mp4" type="video/mp4"></video><br>为了我们的下一代，以及那些被贪婪政治边缘化，无法为自己发声的人们，我真心感谢今晚大家给予我的这份荣誉。   我们必须意识到不能把这颗美丽的星球当作理所当然的存在。让我们一起为地球的未来努力，因为这是我们共同的责任。</td>
+                        </tr>
+                        <!-- <tr>
+                            <td style="vertical-align : top;text-align:center;"><video class="video-player" poster="" controls><source src="content/videos/Trump_mimic_ref.mp4" type="video/mp4"></video><br>A lot of people ask me, do you like the word tremendous? I tell them I don't have a favorite word. I use all the words, every word that I use. A lot of people don't know a lot of words, but I do. I tell them I do.</td>
+                            <td style="vertical-align : top;text-align:center;"><video class="video-player" poster="" controls><source src="content/videos/Trump_mimic_gen_en.mp4" type="video/mp4"></video><br>We shall not be swayed easily, no matter how rocky the road ahead may be. We must trust that amidst the difficulties, solutions can be found; amidst disagreements, consensus can be reached. This is not just a choice about policies or politics, it concerns our shared future and the world we wish to leave for the next generation.</td>
+                            <td style="vertical-align : top;text-align:center;"><video class="video-player" poster="" controls><source src="content/videos/Trump_mimic_gen_zh.mp4" type="video/mp4"></video><br>我们不会被轻易地，击倒，无论前方的道路，多么崎岖不平。我们要相信，在困难面前，我们可以找到解决之道；在分歧之中，我们可以达成共识。这不仅是一次关于政策或政治的选择，它关乎我们共同的未来，以及我们希望留给下一代的世界。</td>
+                        </tr> -->
+                        <tr>
+                            <td style="vertical-align : top;text-align:center;"><video class="video-player" poster="" controls><source src="content/videos/May_ref.mp4" type="video/mp4"></video><br>And this year, as I consider all that 2017 has in store, I believe those opportunities are greater than ever. For we have made a momentous decision and set ourselves on a new direction.</td>
+                            <td style="vertical-align : top;text-align:center;"><video class="video-player" poster="" controls><source src="content/videos/May_gen_en.mp4" type="video/mp4"></video><br>We shall not be swayed easily, no matter how rocky the road ahead may be. We must trust that amidst the difficulties, solutions can be found; amidst disagreements, consensus can be reached. This is not just a choice about policies or politics, it concerns our shared future and the world we wish to leave for the next generation.</td>
+                            <td style="vertical-align : top;text-align:center;"><video class="video-player" poster="" controls><source src="content/videos/May_gen_zh.mp4" type="video/mp4"></video><br>我们不会被轻易地击倒，无论前方的道路，多么崎岖不平。我们要相信，在困难面前，我们可以找到解决之道；在分歧之中，我们可以达成共识。这不仅是一次关于政策或政治的选择，它关乎我们共同的未来，以及我们希望留给下一代的世界。</td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align : top;text-align:center;"><video class="video-player" poster="" controls><source src="content/videos/Hathaway_ref.mp4" type="video/mp4"></video><br>We show time and time again that we do not equally value women's participation, contribution, and leadership.</td>
+                            <td style="vertical-align : top;text-align:center;"><video class="video-player" poster="" controls><source src="content/videos/Hathaway_gen_en.mp4" type="video/mp4"></video><br>Ah, neural networks... they're not just mathematical curiosities, you see. They are mirrors—imperfect, but fascinating—reflecting the computational principles that life itself has evolved over billions of years.</td>
+                            <td style="vertical-align : top;text-align:center;"><video class="video-player" poster="" controls><source src="content/videos/Hathaway_gen_zh.mp4" type="video/mp4"></video><br>当前，随着全球燃料和食品价格不断上涨，在气候危机和持续的军事冲突中，女性的收入，以及她们对商业成功和市场复苏的贡献，比以往任何时候都更加重要。然而，我们一次又一次地表明，我们并没有平等地重视女性的参与、贡献和领导力。</td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align : top;text-align:center;"><video class="video-player" poster="" controls><source src="content/videos/LeCun_ref.mp4" type="video/mp4"></video><br>The, the research world realized that deep learning really worked well and could be applicable to a lot of</td>
+                            <td style="vertical-align : top;text-align:center;"><video class="video-player" poster="" controls><source src="content/videos/LeCun_gen_en.mp4" type="video/mp4"></video><br>Ah, neural networks... they're not just mathematical curiosities, you see. They are mirrors—imperfect, but fascinating—reflecting the computational principles that life itself has evolved over billions of years.</td>
+                            <td style="vertical-align : top;text-align:center;"><video class="video-player" poster="" controls><source src="content/videos/LeCun_gen_zh.mp4" type="video/mp4"></video><br>中国近年来在人工智能领域的进展显著，尤其在大模型研发、开源框架应用及产业落地方面的表现都很突出，体现了中国团队在参数规模，训练效率，以及多语言支持等方面的持续优化能力。</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+            <!-- </div> -->
+
+
+            <div style="display: flex; justify-content: center;align-items: center; height: 80px;">
+                <h3 class="title is-4"> Emotionally Expressive Generation </h3>
+            </div>
+            <div class="content has-text-justified" style="display: flex; justify-content: center;align-items: center;">
+                <p style="font-size: 1.2em; width: 80%;">
+                    Based on reference videos of different emotions, we are able to generate results that correspond to the given emotions, with expressive facial expressions and natural head poses.
+                    Prompt from RAVDESS dataset. 
+                </p>
+            </div>
+            
+            <div class="table-responsive pt-3"> 
+                <table class="table table-hover pt-2" style="table-layout: fixed; width: 100%;">
+                    <colgroup>
+                        <col style="width: 7%;" />
+                        <col style="width: 35%;" />
+                        <col style="width: auto;" />
+                        <col style="width: 35%;" />
+                    </colgroup>
+
+                    <thead>
+                    <tr>
+                        <th style="vertical-align : middle;text-align: center">Emotion </th>
+                        <th style="vertical-align : middle;text-align: center">Prompt </th>
+                        <th style="vertical-align : middle;text-align: center">Text </th>
+                        <th style="vertical-align : middle;text-align: center">Generation</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="vertical-align : middle;text-align:center;" rowspan="1">Calm</td>
+                            <td style="vertical-align : top;text-align:center;"><video class="video-player" poster="" controls><source src="content/videos/Actor_08_ref_calm.mp4" type="video/mp4"></video></td>
+                            <td style="vertical-align : middle;text-align:center;" rowspan="3">I was, like, talking to my friend, and she's all, um, excited about her, uh, trip to Europe, and I'm just, like, so jealous, right?</td>
+                            <td style="vertical-align : top;text-align:center;"><video class="video-player" poster="" controls><source src="content/videos/Actor_08_gen_calm.mp4" type="video/mp4"></video></td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align : middle;text-align:center;" rowspan="1">Happy</td>
+                            <td style="vertical-align : top;text-align:center;"><video class="video-player" poster="" controls><source src="content/videos/Actor_08_ref_happy.mp4" type="video/mp4"></video></td>
+                            <td style="vertical-align : top;text-align:center;"><video class="video-player" poster="" controls><source src="content/videos/Actor_08_gen_happy.mp4" type="video/mp4"></video></td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align : middle;text-align:center;" rowspan="1">Sad</td>
+                            <td style="vertical-align : top;text-align:center;"><video class="video-player" poster="" controls><source src="content/videos/Actor_08_ref_sad.mp4" type="video/mp4"></video></td>
+                            <td style="vertical-align : top;text-align:center;"><video class="video-player" poster="" controls><source src="content/videos/Actor_08_gen_sad.mp4" type="video/mp4"></video></td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align : middle;text-align:center;" rowspan="1">Angry</td>
+                            <td style="vertical-align : top;text-align:center;"><video class="video-player" poster="" controls><source src="content/videos/Actor_11_ref_angry.mp4" type="video/mp4"></video></td>
+                            <td style="vertical-align : middle;text-align:center;" rowspan="3">In my father's day, we respected each other as if we were members of the same family. But today, while the world has speed up, the ties between people have grown thinner.</td>
+                            <td style="vertical-align : top;text-align:center;"><video class="video-player" poster="" controls><source src="content/videos/Actor_11_gen_angry.mp4" type="video/mp4"></video></td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align : middle;text-align:center;" rowspan="1">Disgust</td>
+                            <td style="vertical-align : top;text-align:center;"><video class="video-player" poster="" controls><source src="content/videos/Actor_11_ref_disgust.mp4" type="video/mp4"></video> </td>
+                            <td style="vertical-align : top;text-align:center;"><video class="video-player" poster="" controls><source src="content/videos/Actor_11_gen_disgust.mp4" type="video/mp4"></video></td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align : middle;text-align:center;" rowspan="1">Surprised</td>
+                            <td style="vertical-align : top;text-align:center;"><video class="video-player" poster="" controls><source src="content/videos/Actor_11_ref_surprised.mp4" type="video/mp4"></video> </td>
+                            <td style="vertical-align : top;text-align:center;"><video class="video-player" poster="" controls><source src="content/videos/Actor_11_gen_surprised.mp4" type="video/mp4"></video></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div style="display: flex; justify-content: center;align-items: center; height: 80px;">
+                <h3 class="title is-4"> Long-term Generation </h3>
+            </div>
+            <div class="content has-text-justified" style="display: flex; justify-content: center;align-items: center;">
+                <p style="font-size: 1.2em; " >
+                    We can generate long-term videos while maintaining consistent tone and talking style.
+                </p>
+            </div>
+
+
+            <div class="single-video-container">
+                <video class="video-player" poster="" id="video1" controls height="100%">
+                    <source src="content/videos/May_longterm.mp4"
+                    type="video/mp4">
+                </video>
+            </div>
+            
+            <!-- <div id="results-carousel" class="carousel results-carousel">
+                <div class="item item-video1">
+                  <video class="video-player" poster="" id="video1" controls height="100%">
+                    
+                    <source src="content/videos/May_longterm.mp4"
+                    type="video/mp4">
+                  </video>
+                </div>
+                <div class="item item-video2">
+                  <video class="video-player" poster="" id="video2" controls height="100%">
+                    
+                    <source src="content/videos/Trump_mimic_ref.mp4"
+                    type="video/mp4">
+                  </video>
+                </div>
+                
+            </div> -->
+
+            
+            <!-- <div style="display: flex; justify-content: center;align-items: center; height: 80px;">
+                <h3 class="title is-4"> Listening Mode </h3>
+            </div>
+            <div class="content has-text-justified" style="display: flex; justify-content: center;align-items: center;">
+                <p style="font-size: 1.2em; ">
+                    If the input prompt video shows a listening state, results depicting a listening state can also be generated.
+                </p>
+            </div> -->
+
+            <style>
+            
+                .double-video-player {
+                    width: 100%; /* 确保视频宽度适应容器 */
+                    max-width: 600px; /* 设置最大宽度以避免过大 */
+                }
+            </style>
+
+            <!-- <div class="video-container">
+                <div class="video-item">
+                    <div class="column">
+                        <video class="double-video-player" poster="" id="tree2" controls>
+                            <source src="content/videos/listening.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="video-item">
+                    <div class="column">
+                        <video class="double-video-player" poster="" id="tree3" controls>
+                            <source src="content/videos/listening.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-container">
+                <div class="video-item">
+                    <div class="column">
+                        <video class="double-video-player" poster="" id="tree2" controls>
+                            <source src="content/upper_body_conversation_01.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="video-item">
+                    <div class="column">
+                        <video class="double-video-player" poster="" id="tree3" controls>
+                            <source src="content/upper_body_conversation_02_new.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div> -->
+
+            <div style="display: flex; justify-content: center;align-items: center; height: 80px;">
+                <h3 class="title is-4"> Interactive Demo </h3>
+            </div>
+            <div class="content has-text-justified" style="display: flex; justify-content: center;align-items: center;">
+                <p style="font-size: 1.2em; width: 80%;">
+                    Our method enables real-time generation at 25 FPS, providing practical support for interactive video chat applications.
+                    The interface is built upon <a href="https://github.com/HumanAIGC-Engineering/OpenAvatarChat" target="_blank" style="color: rgb(35, 157, 239); text-decoration: none;">OpenAvatarChat</a>
+                    
+                </p>
+            </div>
+
+            <style>
+                .single-video-container {
+                    display: flex;
+                    justify-content: center; /* 使视频居中 */
+                    align-items: center;
+                    margin-bottom: 20px; /* 视频下方的间距 */
+                }
+            
+                .single-video-item {
+                    width: 50%; /* 使视频项占据整个容器的宽度 */
+                }
+            
+                .single-video-player {
+                    width: 100%; /* 确保视频宽度适应容器 */
+                    max-width: 1200px; /* 设置最大宽度为1000px */
+                }
+            </style>
+
+            <div class="single-video-container">
+                <div class="single-video-item">
+                    <video class="single-video-player" poster="" id="tree2" controls>
+                        <source src="content/videos/interactive_demo_Hathaway.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="single-video-container">
+                <div class="single-video-item">
+                    <video class="single-video-player" poster="" id="tree2" controls>
+                        <source src="content/videos/interactive_demo_Luoxiang.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            
+<!-- 
+            <div style="display: flex; justify-content: center;align-items: center; height: 80px;">
+                <h3 class="title is-4"> Expression & Pose Decoupled Control </h3>
+            </div>
+            <div class="content has-text-justified" style="display: flex; justify-content: center;align-items: center;">
+                <p style="font-size: 1.2em;">
+                    We can generate a wide range of driven results, combining varying intensities of decoupled facial movements and head motions.
+                </p>
+            </div>
+
+            <style>
+                .single-video-container {
+                    display: flex;
+                    justify-content: center; /* 使视频居中 */
+                    align-items: center;
+                    margin-bottom: 20px; /* 视频下方的间距 */
+                }
+            
+                .single-video-item {
+                    width: 50%; /* 使视频项占据整个容器的宽度 */
+                }
+            
+                .single-video-player {
+                    width: 100%; /* 确保视频宽度适应容器 */
+                    max-width: 1000px; /* 设置最大宽度为1000px */
+                }
+            </style>
+
+            <div class="single-video-container">
+                <div class="single-video-item">
+                    <video class="single-video-player" poster="" id="tree2" controls>
+                        <source src="content/expression_pose_decouple_demo.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <div style="display: flex; justify-content: center;align-items: center; height: 80px;">
+                <h3 class="title is-4"> Expression Style Transfer from Ref Video </h3>
+            </div>
+            <div class="content has-text-justified" style="display: flex; justify-content: center;align-items: center;">
+                <p style="font-size: 1.2em;">
+                    We can effectively transfer the reference style to final output, enabling high-freedom and controllable facial expression generation.
+                </p>
+            </div>
+
+
+            <div class="single-video-container">
+                <div class="single-video-item">
+                    <video class="single-video-player" poster="" id="tree2" controls>
+                        <source src="content/expression_transfer_v2.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div> -->
+
+            <br></br>
+        </div>
+    </div>
+</section>
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="columns is-centered">
+            <div class="column is-8">
+                <div class="content" style="text-align: center;">
+                    <p>
+                        This project is intended for research purposes only. We strongly encourage users to use this project and its
+                        generated video responsibly. We are not responsible for any misuse or abuse of this project. By using this project,
+                        you agree to comply with all applicable laws and ethical guidelines.
+                    </p>
+
+                    <p>
+                        This page was built using the <a
+                            href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                            target="_blank">Template</a> which was adopted from the <a href="https://nerfies.github.io"
+                                                                                       target="_blank">Nerfies</a> project
+                        page.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="static/js/script.js"></script>
+<script>
+    // 获取所有视频元素
+    var videos = document.querySelectorAll('video');
+
+    // 为每个视频添加播放事件监听器
+    videos.forEach(function (video) {
+        video.addEventListener('play', function () {
+            // 当任何一个视频开始播放时，暂停其他所有视频
+            videos.forEach(function (otherVideo) {
+                if (otherVideo !== video) {
+                    otherVideo.pause();
+                }
+            });
+        }, false);
+    });
+</script>
+
+<script>
+    new BeforeAfter({
+        id: '#example1'
+    });
+    new BeforeAfter({
+        id: '#example2'
+    });
+    new BeforeAfter({
+        id: '#example3'
+    });
+    new BeforeAfter({
+        id: '#example4'
+    });
+    new BeforeAfter({
+        id: '#example6'
+    });
+    new BeforeAfter({
+        id: '#example7'
+    });
+
+</script>
+
+<script>
+    var gifImage = document.getElementById('gifImage');
+    var isPaused = false;
+
+    gifImage.addEventListener('mouseenter', function () {
+        gifImage.src = gifImage.src;
+        isPaused = true;
+    });
+
+    gifImage.addEventListener('mouseleave', function () {
+        if (isPaused) {
+            gifImage.src = gifImage.src;
+            isPaused = false;
+        }
+    });
+</script>
+
+<script>
+    bulmaCarousel.attach('#results-carousel11', {
+        slidesToScroll: 1,
+        slidesToShow: 2,
+        infinite: true,
+        autoplay: false,
+    });
+    bulmaCarousel.attach('#results-carousel22', {
+        slidesToScroll: 1,
+        slidesToShow: 1,
+        infinite: true,
+        autoplay: false,
+    });
+    bulmaCarousel.attach('#results-carousel44', {
+        slidesToScroll: 1,
+        slidesToShow: 2,
+        infinite: false,
+        autoplay: false,
+    });
+</script>
+
+<script>
+    document.getElementById('gifImage3').src = 'content/gifs/Item.gif';
+    document.getElementById('gifImage1').src = 'content/gifs/s1.gif';
+    document.getElementById('gifImage2').src = 'content/gifs/s2.gif';
+
+    // 图片资源路径
+    const images = [
+        'content/teaser/t3.gif',
+        'content/teaser/t4.gif',
+        'content/teaser/t1.gif',
+        'content/teaser/t2.gif'
+    ];
+
+    // 获取要插入图片的div
+    const group1 = document.getElementById('group1');
+    const group2 = document.getElementById('group2');
+
+    // 创建并插入前两张图片
+    for (let i = 0; i < 2; i++) {
+        const img = document.createElement('img');
+        img.src = images[i];
+        img.loading = 'lazy';
+        img.alt = '图片' + (i + 1);
+        group1.appendChild(img);
+    }
+
+    // 创建并插入后两张图片
+    for (let i = 2; i < images.length; i++) {
+        const img = document.createElement('img');
+        img.src = images[i];
+        img.loading = 'lazy';
+        img.alt = '图片' + (i + 1);
+        group2.appendChild(img);
+    }
+
+</script>
+
+<!-- Default Statcounter code for OmniTalker
+https://humanaigc.github.io/omnitalker -->
+<script type="text/javascript">
+    var sc_project=13111077; 
+    var sc_invisible=1; 
+    var sc_security="d72fc1a5"; 
+    </script>
+    <script type="text/javascript"
+    src="https://www.statcounter.com/counter/counter.js"
+    async></script>
+    <noscript><div class="statcounter"><a title="Web Analytics
+    Made Easy - Statcounter" href="https://statcounter.com/"
+    target="_blank"><img class="statcounter"
+    src="https://c.statcounter.com/13111077/0/d72fc1a5/1/"
+    alt="Web Analytics Made Easy - Statcounter"
+    referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
+
+</body>
+</html>
