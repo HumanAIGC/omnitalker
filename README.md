@@ -23,10 +23,13 @@ Tongyi Lab, Alibaba Group
 ## Citation	
 
 ```
-@article{wang2025omnitalker,
-  title={OmniTalker: Real-Time Text-Driven Talking Head Generation with In-Context Audio-Visual Style Replication},
-  author={Zhongjian Wang and Peng Zhang and Jinwei Qi and Guangyuan Wang and Sheng Xu and Bang Zhang and Liefeng Bo},
-  year={2025}
-  url={https://humanaigc.github.io/omnitalker/}
+@misc{wang2025omnitalkerrealtimetextdriventalking,
+      title={OmniTalker: Real-Time Text-Driven Talking Head Generation with In-Context Audio-Visual Style Replication}, 
+      author={Zhongjian Wang and Peng Zhang and Jinwei Qi and Guangyuan Wang Sheng Xu and Bang Zhang and Liefeng Bo},
+      year={2025},
+      eprint={2504.02433},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2504.02433}, 
 }
 ```
