@@ -15,9 +15,9 @@ Zhongjian Wang,
 Tongyi Lab, Alibaba Group
 
 [![](https://img.shields.io/badge/Project-Page-green.svg)](https://humanaigc.github.io/omnitalker/)
-[![](https://img.shields.io/badge/Paper_-arXiv-orange.svg)](https://arxiv.org/pdf/2504.02433)
-[![](https://img.shields.io/badge/Demo_(Soon)-Huggingface-yellow.svg)](https://humanaigc.github.io/omnitalker/)
-[![](https://img.shields.io/badge/Demo_(Soon)-ModelScope-blue.svg)](https://humanaigc.github.io/omnitalker/)
+[![](https://img.shields.io/badge/Paper-arXiv-orange.svg)](https://arxiv.org/pdf/2504.02433)
+[![](https://img.shields.io/badge/Demo-Huggingface-yellow.svg)](https://huggingface.co/spaces/Mrwrichard/OmniTalker)
+<!-- [![](https://img.shields.io/badge/Demo_(Soon)-ModelScope-blue.svg)](https://humanaigc.github.io/omnitalker/) -->
 
 
 ## Citation	
