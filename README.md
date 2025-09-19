@@ -1,4 +1,4 @@
-# OmniTalker
+# OmniTalker (Accepted by NeurIPS 2025)
 
 This repo hosts the project page for OmniTalker. 
 
@@ -15,7 +15,7 @@ Zhongjian Wang,
 Tongyi Lab, Alibaba Group
 
 [![](https://img.shields.io/badge/Project-Page-green.svg)](https://humanaigc.github.io/omnitalker/)
-[![](https://img.shields.io/badge/Paper-arXiv-orange.svg)](https://arxiv.org/pdf/2504.02433)
+[![](https://img.shields.io/badge/Paper-arXiv-orange.svg)](https://arxiv.org/abs/2504.02433)
 [![](https://img.shields.io/badge/Demo-Huggingface-yellow.svg)](https://huggingface.co/spaces/Mrwrichard/OmniTalker)
 <!-- [![](https://img.shields.io/badge/Demo_(Soon)-ModelScope-blue.svg)](https://humanaigc.github.io/omnitalker/) -->
 
